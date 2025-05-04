@@ -30,7 +30,7 @@ export default function SentimentCaptcha() {
       setFace('happy');
       setResult('pass');
       setTimeout(() => {
-        router.push('/success');
+        router.push('/profile');
       }, 1500);
     } else if (score < -1) {
       setFace('sad');
