@@ -25,9 +25,13 @@ export default function SentimentCaptcha() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const { score } = sentiment.analyze(input);
+  
     if (score > 1) {
       setFace('happy');
       setResult('pass');
+      setTimeout(() => {
+        router.push('/success');
+      }, 1500);
     } else if (score < -1) {
       setFace('sad');
       setResult('fail');
@@ -36,6 +40,7 @@ export default function SentimentCaptcha() {
       setResult('fail');
     }
   };
+  
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-black-100">
