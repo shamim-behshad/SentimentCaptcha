@@ -3,13 +3,16 @@
 import { useState } from 'react';
 import Sentiment from 'sentiment';
 import Image from 'next/image';
+import cry from '../assets/cry.gif';
+import dance from '../assets/dance.gif';
+import pokerFace from '../assets/normal.png';
 
 const sentiment = new Sentiment();
 
 const stickers = {
-  poker: '/sticker-poker.png',
-  happy: '/sticker-happy.png',
-  sad: '/sticker-sad.png'
+  poker: pokerFace,
+  happy: dance,
+  sad: cry
 };
 
 export default function SentimentCaptcha() {
