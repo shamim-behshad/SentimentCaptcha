@@ -16,8 +16,8 @@ export default function ProfilePage() {
         <Image
             src="/profile.jpg" // Replace with your image path
             alt="Profile"
-            width={120}
-            height={120}
+            width={60}
+            height={60}
             className="rounded-full border-4 border-indigo-500"
           />
           <a
