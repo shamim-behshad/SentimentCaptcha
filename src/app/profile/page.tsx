@@ -1,4 +1,4 @@
-
+import Image from 'next/image';
 
 export default function ProfilePage() {
   return (
@@ -13,6 +13,13 @@ export default function ProfilePage() {
 
 
         <div >
+        <Image
+            src="/profile.jpg" // Replace with your image path
+            alt="Profile"
+            width={120}
+            height={120}
+            className="rounded-full border-4 border-indigo-500"
+          />
           <a
             href=""
             className="text-gray-600 hover:text-black transition"
