@@ -37,7 +37,7 @@ export default function SentimentCaptcha() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-black-100">
-      <h1 className="text-3xl font-bold mb-4">Are you nice to the sticker?</h1>
+      <h1 className="text-3xl font-bold mb-4">Are you nice to peter?</h1>
       <Image
         src={stickers[face]}
         alt="Sticker Face"
