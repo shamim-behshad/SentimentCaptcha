@@ -1,11 +1,9 @@
-// app/profile/page.tsx (or /pages/profile.tsx if using pages router)
-
 import Image from 'next/image';
 
 export default function ProfilePage() {
   return (
     <main className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-      <div>
+      <div className="max-w-2xl w-full bg-white rounded-2xl shadow-lg p-8">
         {/* Profile Image and Basic Info */}
         <div className="flex flex-col items-center text-center">
           <Image
@@ -27,7 +25,7 @@ export default function ProfilePage() {
         </div>
 
         {/* Contact / Social Links */}
-        <div>
+        <div className="mt-6 flex justify-center gap-4">
           <a
             href="https://github.com/janedoe"
             className="text-gray-600 hover:text-black transition"
