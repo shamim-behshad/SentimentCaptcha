@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation'; // <-- Import router here
 import Sentiment from 'sentiment';
 import Image from 'next/image';
 import cry from '../assets/cry.gif';
@@ -16,6 +17,7 @@ const stickers = {
 };
 
 export default function SentimentCaptcha() {
+  const router = useRouter();
   const [input, setInput] = useState('');
   const [face, setFace] = useState<'poker' | 'happy' | 'sad'>('poker');
   const [result, setResult] = useState<'pass' | 'fail' | null>(null);
